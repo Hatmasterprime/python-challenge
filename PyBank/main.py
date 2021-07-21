@@ -5,6 +5,23 @@
 # [budget_data.csv](PyBank/Resources/budget_data.csv). The dataset is composed of two columns: 
 # `Date` and `Profit/Losses`. (Thankfully, your company has rather lax standards for accounting so the 
 # records are simple.)
+import csv
+with open ('budget_data') as file:
+    reader = csv.reader(file)
+
+    count = 0
+
+    for row in reader:
+        print(row)
+
+        if count > 5:
+            break
+
+        count += 1
+        
+
+
+
 
 
 
